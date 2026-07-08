@@ -1,4 +1,4 @@
-package com.kleyton.aprendendo.spring.infrastructure.security;
+package com.kleyton.usuario.infrastructure.security;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

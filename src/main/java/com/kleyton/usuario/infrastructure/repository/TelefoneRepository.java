@@ -1,4 +1,4 @@
-package com.kleyton.aprendendo.spring.infrastructure.repository;
+package com.kleyton.usuario.infrastructure.repository;
 
 import com.kleyton.aprendendo.spring.infrastructure.entity.Telefone;
 import org.springframework.data.jpa.repository.JpaRepository;

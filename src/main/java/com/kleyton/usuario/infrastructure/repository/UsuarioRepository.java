@@ -1,9 +1,11 @@
-package com.kleyton.aprendendo.spring.infrastructure.repository;
+package com.kleyton.usuario.infrastructure.repository;
 
-import com.kleyton.aprendendo.spring.infrastructure.entity.Usuario;
+
+import com.kleyton.usuario.infrastructure.entity.Usuario;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
 import java.util.Optional;
 
 @Repository

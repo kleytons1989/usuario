@@ -1,8 +1,9 @@
-package com.kleyton.aprendendo.spring.infrastructure.security;
+package com.kleyton.usuario.infrastructure.security;
 
 
-import com.kleyton.aprendendo.spring.infrastructure.entity.Usuario;
-import com.kleyton.aprendendo.spring.infrastructure.repository.UsuarioRepository;
+
+import com.kleyton.usuario.infrastructure.entity.Usuario;
+import com.kleyton.usuario.infrastructure.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
