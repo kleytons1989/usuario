@@ -1,4 +1,4 @@
-package com.kleyton.aprendendo.spring.infrastructure.exceptions;
+package com.kleyton.usuario.infrastructure.exceptions;
 
 public class ConflictException extends RuntimeException{
 
