@@ -1,4 +1,4 @@
-package com.kleyton.aprendendo.spring.infrastructure.security;
+package com.kleyton.usuario.infrastructure.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
