@@ -4,6 +4,7 @@ import com.kleyton.usuario.business.converter.UsuarioConverter;
 import com.kleyton.usuario.business.dto.UsuarioDTO;
 import com.kleyton.usuario.infrastructure.entity.Usuario;
 import com.kleyton.usuario.infrastructure.exceptions.ConflictException;
+import com.kleyton.usuario.infrastructure.exceptions.ResourceNotFoundException;
 import com.kleyton.usuario.infrastructure.repository.UsuarioRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -42,6 +43,16 @@ public class UsuarioService {
 
     public boolean verificaEmailExistente(String email){
         return usuarioRepository.existsByEmail(email);
+    }
+
+    public Usuario buscarUsuarioPorEmail(String email){
+        return usuarioRepository.findByEmail(email).orElseThrow(
+                () -> new ResourceNotFoundException("Email não encontrado" + email));
+    }
+
+    public void deletaUsuarioPorEmail(String email){
+        usuarioRepository.deleteByEmail(email);
+
     }
 
 }
